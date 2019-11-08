@@ -1,0 +1,4 @@
+/source/*
+/dest/*
+/node_modules
+/*.env

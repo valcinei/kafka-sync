@@ -1,0 +1,23 @@
+{
+  "name": "cc-dropbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "consumer": "node ./src/index.js --consumer",
+    "producer": "node ./src/index.js --producer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.0.2",
+    "commander": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "kafka-node": "^4.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

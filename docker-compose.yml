@@ -1,0 +1,14 @@
+version: "3"
+services:
+  cc-zookeeper:
+    container_name: cc-zookeeper
+    image: wurstmeister/zookeeper
+
+  cc-kafka:
+    container_name: cc-kafka
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: cc-zookeeper:2181
